@@ -25,3 +25,17 @@ console.log(Math.tan(90*Math.PI/180))
 // random number 
 console.log(Math.random().toFixed(1)*80 + 9)
 console.log(Math.ceil(Math.random()*50 + 1))
+
+
+// let num = 5;
+// let value = "";
+// while(num != Infinity) {
+//   num2 = num * num;
+//   value = value + num2 + '<br>';
+// } 
+// document.getElementById('btn').innerHTML = num2;
+
+
+const x = 30;
+
+console.log(x.toString(10))
