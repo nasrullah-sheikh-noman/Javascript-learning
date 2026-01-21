@@ -39,3 +39,37 @@ console.log(Math.ceil(Math.random()*50 + 1))
 const x = 30;
 
 console.log(x.toString(10))
+
+const g = 222322;
+const h = new Number(22);
+
+console.log(g.toPrecision(5))
+console.log(g.toFixed(2));
+console.log(g.toFixed(3))
+
+
+// Number method 
+
+num = Number.MAX_VALUE;
+console.log(num)
+
+num2 = Number.MIN_VALUE;
+console.log(num2)
+
+num3 = Number.EPSILON;
+console.log(num3)
+
+num4 = Number.NaN;
+console.log(num4)
+
+num5 = Number.MAX_SAFE_INTEGER;
+console.log(num5)
+
+num6 = Number.MIN_SAFE_INTEGER;
+console.log(num6)
+
+num7 = Number.toPrecision;
+console.log(num7)
+
+num8 = Number.toFixed;
+console.log(num8)
