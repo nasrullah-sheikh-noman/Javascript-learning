@@ -78,3 +78,12 @@ car2.push('ford')
 for (const element of car2) {
   console.log(element)
 }
+
+
+// While loop
+
+num = 0;
+while (num < 20) {
+  console.log(num);
+  num++;
+}
