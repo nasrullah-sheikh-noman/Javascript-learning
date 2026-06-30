@@ -1,4 +1,3 @@
-"use strict";
 // let country;
 // console.log(country);
 // country = "I love bangladesh.";
@@ -6,7 +5,6 @@
 // age = "thiry five";
 // console.log(age);
 // country = 88;
-Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(country);
 // function multiply(a : number, b : number) {
 //   return a*b;
@@ -141,25 +139,47 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //   console.log(`User name is ${userInfo.name}`);
 // }
 // userDetails("noman100", {name : "noman", age : 32});
-//  
-class Player {
-    name;
-    age;
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    play() {
-        console.log(`${this.name} is ${this.age} years old.`);
-    }
-}
-const sakib = new Player("sakib", 34);
-const mashrafi = new Player("mashrafi", 44);
-const players = [];
-players.push(sakib);
-players.push(mashrafi);
-console.log(players);
-console.log(sakib.age);
-sakib.age = 89;
-console.log(sakib.age);
+// class access modifier
+// class Player {
+//   constructor(private name : string, readonly age : number) {}
+//   play() {
+//     console.log(`${this.name} is ${this.age} years old.`);
+//   }
+// }
+// const sakib = new Player("sakib", 34);
+// const mashrafi = new Player("mashrafi", 44);
+// const players: Player[] = [];
+// players.push(sakib);
+// players.push(mashrafi)
+// console.log(players);
+// console.log(sakib.age);
+// sakib.age = 89;
+// console.log(sakib.age);
+// Module system
+// import { Player } from "./classes/player.js"
+// const sakib = new Player("sakib", 23, "bangladesh");
+// const mashrafi = new Player("mashrafi", 34, "uganda");
+// console.log(sakib.name);
+// sakib.play();
+// console.log(mashrafi.country);
+// console.log(mashrafi.name);
+// mashrafi.play();
+// interface 
+// interface rectrangleOptions {
+//   width : number;
+//   height : number;
+//   length : number;
+// }
+// function drawReactangle(options: rectrangleOptions) {
+//   let width = options.width;
+//   let height = options.height;
+//   let length = options.length;
+//   return width*height*length;
+// }
+// let options = {width : 12, height : 22, length : 8};
+// console.log(drawReactangle(options));
+import { Player } from "./classes/player.js";
+let sakib;
+sakib = new Player("sakib", 32, "bangladesh");
+sakib.play();
 //# sourceMappingURL=script.js.map

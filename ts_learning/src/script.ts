@@ -6,6 +6,7 @@
 // console.log(age);
 // country = 88;
 
+
 // console.log(country);
 
 // function multiply(a : number, b : number) {
@@ -159,7 +160,7 @@
 // userDetails("noman100", {name : "noman", age : 32});
 
 
-//  class access modifier
+// class access modifier
 // class Player {
 
 //   constructor(private name : string, readonly age : number) {}
@@ -182,3 +183,43 @@
 
 
 // Module system
+// import { Player } from "./classes/player.js"
+// const sakib = new Player("sakib", 23, "bangladesh");
+// const mashrafi = new Player("mashrafi", 34, "uganda");
+
+// console.log(sakib.name);
+// sakib.play();
+// console.log(mashrafi.country);
+// console.log(mashrafi.name);
+// mashrafi.play();
+
+
+// interface 
+// interface rectrangleOptions {
+//   width : number;
+//   height : number;
+//   length : number;
+// }
+// function drawReactangle(options: rectrangleOptions) {
+//   let width = options.width;
+//   let height = options.height;
+//   let length = options.length;
+//   return width*height*length;
+// }
+// let options = {width : 12, height : 22, length : 8};
+
+// console.log(drawReactangle(options));
+
+import { Player } from "./classes/player.js";
+import { IsPlayer } from "./interfaces/isPlayer.js";
+
+let sakib : IsPlayer;
+let mashrafi : IsPlayer;
+sakib = new Player("sakib", 32, "bangladesh");
+mashrafi = new Player("mashrafi", 43, "uganda");
+
+const playsers : IsPlayer[] = [];
+playsers.push(sakib);
+playsers.push(mashrafi);
+
+sakib.play();
