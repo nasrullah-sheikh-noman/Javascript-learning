@@ -210,16 +210,37 @@
 
 // console.log(drawReactangle(options));
 
-import { Player } from "./classes/player.js";
-import { IsPlayer } from "./interfaces/isPlayer.js";
+// import { Player } from "./classes/player.js";
+// import { IsPlayer } from "./interfaces/isPlayer.js";
 
-let sakib : IsPlayer;
-let mashrafi : IsPlayer;
-sakib = new Player("sakib", 32, "bangladesh");
-mashrafi = new Player("mashrafi", 43, "uganda");
+// let sakib : IsPlayer;
+// let mashrafi : IsPlayer;
+// sakib = new Player("sakib", 32, "bangladesh");
+// mashrafi = new Player("mashrafi", 43, "uganda");
 
-const playsers : IsPlayer[] = [];
-playsers.push(sakib);
-playsers.push(mashrafi);
+// const playsers : IsPlayer[] = [];
+// playsers.push(sakib);
+// playsers.push(mashrafi);
 
-sakib.play();
+// sakib.play();
+
+// generics
+// interface obj {
+//   name : string,
+//   age : number
+// }
+// const addId = <t extends obj>(obj: t) => {
+//   const id = Math.floor(Math.random()*100);
+//   return {...obj, id};
+// }
+
+// const user = addId({name : "noman", age : 32})
+
+// console.log(user);
+
+
+interface APIResponse {
+  
+}
+
+
