@@ -239,8 +239,17 @@
 // console.log(user);
 
 
-interface APIResponse {
+// interface APIResponse<t> {
+//   status : number,
+//   type : string,
+//   data : t,
+// }
+
+// const res1: APIResponse<object> = {
+//   status : 300,
+//   type : "data",
+//   data : {name : "noman", age : 32},
   
-}
+// }
 
 
