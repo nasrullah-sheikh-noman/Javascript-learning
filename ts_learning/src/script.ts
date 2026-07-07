@@ -239,17 +239,33 @@
 // console.log(user);
 
 
+// Enum types
+// enum RType { SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDDEN };
 // interface APIResponse<t> {
 //   status : number,
-//   type : string,
+//   type : RType,
 //   data : t,
 // }
 
 // const res1: APIResponse<object> = {
 //   status : 300,
-//   type : "data",
+//   type : RType.SUCCESS,
 //   data : {name : "noman", age : 32},
-  
 // }
+
+// console.log(res1)
+
+
+// Tuples
+// let a = ["cse", 32, {name : "noman", age: 32}];
+// let b: [string, number, object] = ["You know who am i?", 43, {name: "BUET", session: "21-22", dept: "CSE"}];
+// b[2] = {name: "Nasrullah", age: 43};
+// b.pop()
+// b.push(true);
+// console.log(b[2]);
+
+
+
+
 
 
