@@ -5,7 +5,6 @@
 // age = "thiry five";
 // console.log(age);
 // country = 88;
-export {};
 // console.log(country);
 // function multiply(a : number, b : number) {
 //   return a*b;
@@ -165,7 +164,7 @@ export {};
 // console.log(mashrafi.country);
 // console.log(mashrafi.name);
 // mashrafi.play();
-// interface 
+// interface
 // interface rectrangleOptions {
 //   width : number;
 //   height : number;
@@ -220,4 +219,70 @@ export {};
 // b.pop()
 // b.push(true);
 // console.log(b[2]);
+// typescript object
+// type NameType = {
+//   firstName: string,
+//   lastName: string
+// }
+// type ChannelType = {
+//   channelName: string,
+//   playlist: number,
+//   instructorDetails:NameType
+// }
+// let instructorDetails: NameType = {
+//   firstName: "Nasrullah Sheikh",
+//   lastName: "Noman"
+// }
+// let channelDetails:ChannelType  = {
+//   channelName: "Code with Noman",
+//   playlist: 10,
+//   instructorDetails: {
+//     firstName: "Nasrullah Sheikh",
+//     lastName: "Noman",
+//   }
+// }
+// let channelDetails2: ChannelType = {
+//   channelName: "Code with Nasrullah",
+//   playlist: 80,
+//   instructorDetails: {
+//     firstName: "Noman Sheikh",
+//     lastName: "Nasrullah"
+//   }
+// }
+// Type intersection
+// type NameType = {
+//   firstName: string,
+//   lastName: string
+// }
+// type OthersType = {
+//   age: number,
+//   nationality: string
+// }
+// type DetailsType = NameType & OthersType;
+// function sayDetails(obj:DetailsType):string {
+//   let { firstName, lastName, age, nationality } = obj;
+//   return `Full name: ${firstName} ${lastName}, age: ${age}, nationality: ${nationality}`;
+// }
+// let instructorDetails:DetailsType = {
+//   firstName: "Nasrullah Sheikh",
+//   lastName: "Noman",
+//   age: 32,
+//   nationality: "bangladesh"
+// }
+// console.log(sayDetails(instructorDetails));
+// Array
+// let arr:number[] = [32, 53];
+// arr[2] = 43;
+// arr.push(5432);
+// console.log(arr[3]);
+// let programmers: string[] = ["Noman", "Nasrullah", "NS_Noman"];
+// let ageOfProgrammers: number[] = [32, 51, 23];
+// let marritalStatusOfProgrammers: boolean[] = [true, false, true];
+let twoDArray = [
+    [1, 2, 3, 4],
+    [4, 8, 0, 3],
+    [2, 8, 9, 5]
+];
+console.log(twoDArray[1]);
+export {};
 //# sourceMappingURL=script.js.map
