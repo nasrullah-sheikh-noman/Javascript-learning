@@ -342,10 +342,24 @@
 // let ageOfProgrammers: number[] = [32, 51, 23];
 // let marritalStatusOfProgrammers: boolean[] = [true, false, true];
 
-let twoDArray:number[][] = [
-  [1, 2, 3, 4],
-  [4, 8, 0, 3],
-  [2, 8, 9, 5]
-]
+// let twoDArray:number[][] = [
+//   [1, 2, 3, 4],
+//   [4, 8, 0, 3],
+//   [2, 8, 9, 5]
+// ]
 
-console.log(twoDArray[1]);
+// console.log(twoDArray[1]);
+
+// Union Types
+// let age: number | any = "twenty";
+// age = 32;
+// age = true;
+
+// let ageArr: (number | string)[] = ["noman", 32, 53];
+
+// let day: "Sunday" | "Monday" = "Monday";
+
+// Type narrowing
+function sayDetails(name:string, age:number | string) {
+
+}
