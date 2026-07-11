@@ -5,6 +5,7 @@
 // age = "thiry five";
 // console.log(age);
 // country = 88;
+export {};
 // console.log(country);
 // function multiply(a : number, b : number) {
 //   return a*b;
@@ -278,11 +279,52 @@
 // let programmers: string[] = ["Noman", "Nasrullah", "NS_Noman"];
 // let ageOfProgrammers: number[] = [32, 51, 23];
 // let marritalStatusOfProgrammers: boolean[] = [true, false, true];
-let twoDArray = [
-    [1, 2, 3, 4],
-    [4, 8, 0, 3],
-    [2, 8, 9, 5]
-];
-console.log(twoDArray[1]);
-export {};
+// let twoDArray:number[][] = [
+//   [1, 2, 3, 4],
+//   [4, 8, 0, 3],
+//   [2, 8, 9, 5]
+// ]
+// console.log(twoDArray[1]);
+// Union Types
+// let age: number | any = "twenty";
+// age = 32;
+// age = true;
+// let ageArr: (number | string)[] = ["noman", 32, 53];
+// let day: "Sunday" | "Monday" = "Monday";
+// Type narrowing
+// function sayDetails(name: string, age: number | string): void {
+//   let curAge;
+//   if (typeof age === "string") {
+//     curAge = Number(age) - 2;
+//   } else {
+//     curAge = age - 2;
+//   }
+//   console.log(`Your name is ${name}, Your age is ${curAge}`);
+// }
+// sayDetails("Nasrullah", "21");
+// Typescript Interface
+// type testType = {
+//   firstName: string,
+//   lastName: string,
+//   age: number,
+// }
+// interface People {
+//   firstName: string,
+//   lastName: string,
+//   age: number,
+// }
+// interface People {
+//   email: string,
+//   fullName(): string
+// }
+// let noman:People = {
+//   firstName: "Nasrullah Sheikh",
+//   lastName: "Noman",
+//   age: 21,
+//   email: "nas@gmail.com",
+//   fullName() {
+//     return `${this.firstName} ${this.lastName}`
+//   }
+// }
+// console.log(noman.fullName());
 //# sourceMappingURL=script.js.map

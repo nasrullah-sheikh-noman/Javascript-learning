@@ -360,6 +360,43 @@
 // let day: "Sunday" | "Monday" = "Monday";
 
 // Type narrowing
-function sayDetails(name:string, age:number | string) {
+// function sayDetails(name: string, age: number | string): void {
+//   let curAge;
+//   if (typeof age === "string") {
+//     curAge = Number(age) - 2;
+//   } else {
+//     curAge = age - 2;
+//   }
+//   console.log(`Your name is ${name}, Your age is ${curAge}`);
+// }
 
-}
+// sayDetails("Nasrullah", "21");
+
+
+// Typescript Interface
+
+// type testType = {
+//   firstName: string,
+//   lastName: string,
+//   age: number,
+// }
+// interface People {
+//   firstName: string,
+//   lastName: string,
+//   age: number,
+// }
+// interface People {
+//   email: string,
+//   fullName(): string
+// }
+
+// let noman:People = {
+//   firstName: "Nasrullah Sheikh",
+//   lastName: "Noman",
+//   age: 21,
+//   email: "nas@gmail.com",
+//   fullName() {
+//     return `${this.firstName} ${this.lastName}`
+//   }
+// }
+// console.log(noman.fullName());
