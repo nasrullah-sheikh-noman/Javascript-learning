@@ -384,19 +384,31 @@
 //   firstName: string,
 //   lastName: string,
 //   age: number,
-// }
-// interface People {
 //   email: string,
 //   fullName(): string
 // }
 
-// let noman:People = {
+// interface Family {
+//   isWife: boolean
+// }
+
+// interface Employee extends People, Family  {
+//   designation: string,
+//   yearOfExperience: number
+// }
+
+// let noman:Employee = {
 //   firstName: "Nasrullah Sheikh",
 //   lastName: "Noman",
 //   age: 21,
 //   email: "nas@gmail.com",
 //   fullName() {
 //     return `${this.firstName} ${this.lastName}`
-//   }
+//   },
+//   designation: "Frontend Developer",
+//   yearOfExperience: 2,
+//   isWife: false
 // }
 // console.log(noman.fullName());
+
+ 
